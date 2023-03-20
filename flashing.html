@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>React Example</title>
+    <style>
+        .blink {
+            animation: blinker 0.5s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+    <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function BlinkingImage() {
+            const [isBlinking, setIsBlinking] = React.useState(false);
+
+            const handleClick = () => {
+                setIsBlinking(!isBlinking);
+            };
+
+            const imageSrc = "img/abehiroshi.jpeg";
+
+            return (
+                <div>
+                    <img src={imageSrc} className={isBlinking ? 'blink' : ''} onClick={handleClick} />
+                </div>
+            );
+        }
+
+        ReactDOM.render(<BlinkingImage />, document.getElementById('root'));
+    </script>
+</body>
+
+</html>
