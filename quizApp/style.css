@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.alert-primary {
+  color: rgb(0, 0, 144);
+  background-color: rgb(212, 212, 255);
+  padding: 30px 20px;
+  margin: 30px 50px;
+}
+.btns {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+button {
+  background-color: rgb(58, 98, 255);
+  color: white;
+  margin-right: 10px;
+  border: none;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
