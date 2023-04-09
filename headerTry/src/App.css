@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+li {
+  list-style: none;
+}
+.header {
+  display: flex;
+  padding: 18px;
+  border-bottom: 1px solid gray;
+}
+.HeaderIcon {
+  cursor: pointer;
+}
+.HeaderMenuList {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+.row {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
